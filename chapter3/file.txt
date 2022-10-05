@@ -1,0 +1,6 @@
+This lazy property of
+large enumerable input. A typical case is when you need to parse each line of a file.
+Relying on eager Enum functions means you have to read the entire file into memory
+and then iterate through each line. In contrast, using streams makes it possible to read
+and immediately parse one line at a time. For example, the following function takes a
+filename and returns the list of all lines from that file that are longer than 80 characters:
