@@ -18,7 +18,7 @@ defmodule TodoList do
 
   def entries(todo_list, date) do
     todo_list.entries
-    |> Stream.filter(fn({_, entry} -> entry.date == date end)
-    |> Enum.map(fn {_, entry} -> entry end)
+    |> Stream.filter(fn{_id, entry} -> entry.date == date end)
+    |> Enum.map(fn {_id, entry} -> entry end)
   end
 end
